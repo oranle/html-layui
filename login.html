@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xxx-登录</title>
+<link rel="stylesheet" href="css/login_style.css">
+<link rel="stylesheet" href="js/layui/css/layui.css">
+</head>
+
+<body>
+<div class="bg"></div>
+<div class="logo_img1"></div>
+
+<div class="page-container">
+  <div class="page-img">
+    <p>如您需要找回登录密码、以及任何业务使用方面的问题，请拨打客服电话：10000</p>
+  </div>
+  
+  <h1>xxx&#8482;管理系统</h1>
+  
+  <div class="body_1">
+    <form class="layui-form" action="" lay-filter="example">
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="color:#FFF;">账号</label>
+        <div class="layui-input-block">
+          <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号" class="layui-input">
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="color:#FFF;">密码</label>
+        <div class="layui-input-block">
+          <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="color:#FFF; text-align:right">身份</label>
+        <div class="layui-input-block">
+          <select name="interest" lay-filter="aihao">
+            <option value="1">普通用户</option>
+            <option value="2">系统管理员</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="color:#FFF">验证码</label>
+        <div class="layui-input-block">
+          <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入验证码" class="layui-input" style="width: 160px; float: left;">
+          <div class="yzm"><img src="images/gif.gif" width="50" height="22"></div>
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <label class="layui-form-label" style="color:#FFF">验证码</label>
+        <div class="layui-input-block">
+          <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入验证码" class="layui-input" style="width: 160px; float: left;">
+          <button class="layui-btn layui-btn-warm" style=" width:120px; margin-left:10px;" title="获取验证码">获取验证码</button>
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <div class="layui-input-block"  style="color:#FFF">
+          <input type="radio" name="sex" value="选项1" title="选项1" checked="">
+          <input type="radio" name="sex" value="选项2" title="选项2">
+        </div>
+      </div>
+      
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+          <button class="layui-btn" lay-submit lay-filter="formDemo" style=" width:100%; height:50px; line-height:50px;  background-color:#000">登 录</button>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+  
+</div>
+
+<script src="js/layui/layui.js"></script> 
+<script>
+//Demo
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

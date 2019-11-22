@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="js/layui/css/layui.css">
+		<link href="css/main_style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<form class="layui-form" action="">
+
+			<!--面包屑-导航-->
+			<div class="layui-breadcrumb"><a href="">管理首页</a> <a><cite>系统信息</cite></a> </div>
+
+			<!--栏目标题-->
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top:40px;">
+				<legend>
+					<span class="home-wel-h1">感谢登录xxx</span> - <span class="home-wel-h2">后台管理系统</span>
+			  </legend>
+				<div class="layui-field-box">
+					<div class="home-wel-h3">
+						- 上次登录-退出时间：<span>2018.06.12 10:35 - 2018.06.12 17:49</span><br>
+						- 请从左侧菜单或快捷功能选择您要进行的操作；<br>
+						- 如您需要找回登录密码、以及任何业务使用方面的问题，请拨打客服电话：<strong>10000000</strong> ;
+					</div>
+				</div>
+			</fieldset>
+
+			<!--快捷功能-->
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+				<legend>快捷功能</legend>
+			</fieldset>
+			<ul class="home-wel-shortcuts">
+				<a href="">
+					<li>
+						<div class="b1">
+							<i class="layui-icon layui-icon-cellphone-fine" style="font-size: 50px; color: #ffffff;"></i>
+						</div>
+						<h1>短信配置</h1>
+						<h2>管理发布短信内容，控制短信发送时间、数量、频次</h2>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="b1">
+							<i class="layui-icon layui-icon-engine" style="font-size: 50px; color: #ffffff;"></i>
+						</div>
+						<h1>流量控制</h1>
+						<h2>控制号码的发送流量、发送时间段、查看号码的基本业务信息</h2>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="b1">
+							<i class="layui-icon layui-icon-date" style="font-size: 50px; color: #ffffff;"></i>
+						</div>
+						<h1>查看呼叫详单</h1>
+						<h2>登录管理，随时随地掌握号码的呼叫记录信息</h2>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="b1">
+							<i class="layui-icon layui-icon-dialogue" style="font-size: 50px; color: #ffffff;"></i>
+						</div>
+						<h1>查看短信发送详单</h1>
+						<h2>查看和管理号码下所有发送短信的具体内容信息</h2>
+					</li>
+				</a>
+			</ul>
+		</form>
+
+		<script src="js/layui/layui.js"></script>
+
+		<script>
+			//导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+
+			});
+		</script>
+
+	</body>
+</html>

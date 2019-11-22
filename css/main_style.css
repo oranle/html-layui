@@ -1,0 +1,124 @@
+body {
+	font-family: "微软雅黑";
+	background-color: #FFF;
+	margin:20px 30px;
+}
+.home-wel-h1 {
+	color:#333333;
+	font-weight:bold;
+}
+.home-wel-h2 {
+	color: #009688;
+	font-weight:bold;
+}
+.home-wel-h3 {
+	padding: 16px;
+	color:#666666;
+	line-height:26px;
+}
+.home-wel-h3 span {
+	padding: 15px;
+	color:#009F95;
+	line-height:26px;
+}
+.home-wel-shortcuts {
+	margin: 20px;
+	text-align: center;
+}
+.home-wel-shortcuts li {
+	width: 200px;
+	float: left;
+	padding: 20px;
+}
+.home-wel-shortcuts .b1 {
+	text-align: center;
+	height: 77px;
+	width: 100px;
+	margin: auto;
+	background-color: #e2e2e2;
+	border-radius: 50px;
+	padding-top: 23px;
+}
+.home-wel-shortcuts .b1:hover {
+	background-color: #009F95;
+}
+.home-wel-shortcuts li h1 {
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #333;
+	padding-top: 10px;
+}
+.home-wel-shortcuts li h1:hover {
+	color: #009F95;
+}
+.home-wel-shortcuts li h2 {
+	font-size: 12px;
+	line-height: 16px;
+	color: #BEBEBE;
+	padding: 0 10px;
+}
+.home-wel-shortcuts li h2:hover {
+	color: #666;
+}
+
+
+.table-form {
+	width: 100%;
+}
+
+.moban-frame {
+	width: 860px;
+	display: block;
+}
+.moban-new {
+	height: 50px;
+	width: 100px;
+	display: block;
+	float: left;
+	margin: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+	padding-top: 28px;
+}
+
+.moban-list {
+	float: left;
+	position: relative;
+	display: block;
+	width: 600px;
+}
+.moban {
+	background-color: #CCCCCC;
+	margin: 10px;
+	float: left;
+	height: 80px;
+	width: 100px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
+.moban:hover {
+	background-color: #fff;
+}
+.moban h1 {
+	font-size: 12px;
+	line-height: 20px;
+	clear: both;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.moban h1 a {
+	color: #000;
+}
+.moban h1 a:hover {
+	color: #009688;
+}
+.moban .video {
+	height: 56px;
+	width: 100px;
+	overflow: hidden;
+	background-color: #333;
+}

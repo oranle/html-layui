@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>left</title>
+<link rel="stylesheet" href="js/layui/css/layui.css">
+</head>
+
+<body style="background-color:#393D49">
+  
+<ul class="layui-nav layui-nav-tree layui-inline">
+  <li class="layui-nav-item">
+    <a href="home.html" target="mainFrame">管理首页</a>
+  </li>
+  <li class="layui-nav-item layui-nav-itemed">
+    <a href="javascript:;">信息管理</a>
+    <dl class="layui-nav-child">
+      <dd><a href="user.html" target="mainFrame">表单信息</a></dd>
+      <dd><a href="list.html" target="mainFrame">列表信息</a></dd>
+      <dd><a href="javascript:;">菜单2</a></dd>
+    </dl>
+  </li>
+  <li class="layui-nav-item layui-nav-itemed">
+    <a href="javascript:;">业务统计</a>
+    <dl class="layui-nav-child">
+      <dd><a href="javascript:;">菜单1</a></dd>
+      <dd><a href="javascript:;">菜单1</a></dd>
+    </dl>
+  </li>
+</ul>
+  
+  
+<script src="js/layui/layui.js"></script>
+<script>
+	layui.use('element', function(){
+	  var element = layui.element;
+	  
+	});
+</script>
+</body>
+</html>
